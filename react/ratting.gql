@@ -1,0 +1,15 @@
+mutation CREATEREVIEW(
+  $dataEntity: String!,
+  $account: String!,
+  $schema: String!,
+  $document: DocumentInputV2
+) {
+  createDocumentV2(
+    dataEntity: $dataEntity,
+  	account: $account,
+  	schema: $schema,
+  	document: $document
+  ) {
+		documentId
+  }
+}
